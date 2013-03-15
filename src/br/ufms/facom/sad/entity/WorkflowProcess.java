@@ -4,15 +4,16 @@
  */
 package br.ufms.facom.sad.entity;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
  *
- * @author Rodrigo Kuninari
+ * @author <a href="mailto:rodrigokuninari@outlook.com">Rodrigo Kuninari</a>
  */
 @Entity
-public class WorkflowProcess
+public class WorkflowProcess implements Serializable
 {
 
     @Id

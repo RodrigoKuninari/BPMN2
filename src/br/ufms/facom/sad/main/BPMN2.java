@@ -10,7 +10,7 @@ import javax.persistence.Persistence;
 
 /**
  *
- * @author Rodrigo Kuninari
+ * @author <a href="mailto:rodrigokuninari@outlook.com">Rodrigo Kuninari</a>
  */
 public class BPMN2
 {

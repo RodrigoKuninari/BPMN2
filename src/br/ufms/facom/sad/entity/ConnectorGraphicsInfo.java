@@ -4,13 +4,18 @@
  */
 package br.ufms.facom.sad.entity;
 
+import javax.persistence.MappedSuperclass;
+
 /**
  *
  * @author <a href="mailto:rodrigokuninari@outlook.com">Rodrigo Kuninari</a>
  */
-public enum ActivityEnum
+@MappedSuperclass
+public abstract class ConnectorGraphicsInfo extends Coordinates
 {
 
-    START_EVENT, INTERMEDIATE_EVENT, END_EVENT, TASK, ROUTE;
+    private String toolId;
+
+    private int borderColor;
 
 }

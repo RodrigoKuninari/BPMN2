@@ -4,7 +4,7 @@
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2013-03-12T19:12:16.8682867-04:00</Created>
-    <ModificationDate>2013-03-12T20:33:56.6195364-04:00</ModificationDate>
+    <ModificationDate>2013-03-15T00:26:11.0867062-04:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -18,7 +18,7 @@
     <Pool Id="3ea40d34-6d32-4627-84bf-b62305d06995" Name="Main Process" Process="c9fc7279-0b77-4ea4-80be-254ca9a1caf2" BoundaryVisible="false">
       <Lanes />
       <NodeGraphicsInfos>
-        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="0" Width="0" BorderColor="-16777216" FillColor="-1" BorderVisible="false">
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1" BorderVisible="false">
           <Coordinates XCoordinate="0" YCoordinate="0" />
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
@@ -50,11 +50,19 @@
     </Pool>
   </Pools>
   <Associations />
-  <Artifacts />
+  <Artifacts>
+    <Artifact BizAgiArtifactTypeSpecified="false" Id="4aa4a8f2-ce41-4742-9c8f-2b5692e1e429" ArtifactType="Annotation" TextAnnotation="UFMS | FACOM | Sistemas de Apoio à Decisão - 2013&#xD;&#xA;Trabalho - Mapeamento Relacional do BPMN 2.0&#xD;&#xA;Integrantes:&#xD;&#xA;- Heverson Silva Vasconcelos&#xD;&#xA;- Rodrigo Kuninari">
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="112" Width="250" BorderColor="-2763307" FillColor="-2763307" BorderVisible="true">
+          <Coordinates XCoordinate="30" YCoordinate="328" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Artifact>
+  </Artifacts>
   <WorkflowProcesses>
     <WorkflowProcess Id="c9fc7279-0b77-4ea4-80be-254ca9a1caf2" Name="Main Process">
       <ProcessHeader>
-        <Created>2013-03-12T20:34:01.7798316-04:00</Created>
+        <Created>2013-03-15T00:26:16.0409895-04:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -68,7 +76,7 @@
     </WorkflowProcess>
     <WorkflowProcess Id="43aa15fd-f19f-4ff5-a33d-8a9ead3eb919" Name="Piscina">
       <ProcessHeader>
-        <Created>2013-03-12T20:34:01.7798316-04:00</Created>
+        <Created>2013-03-15T00:26:16.0419896-04:00</Created>
         <Description>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Description>
       </ProcessHeader>
       <RedefinableHeader>

@@ -6,7 +6,7 @@ package br.ufms.facom.sad.entity;
 
 /**
  *
- * @author Rodrigo Kuninari
+ * @author <a href="mailto:rodrigokuninari@outlook.com">Rodrigo Kuninari</a>
  */
 public enum TransitionEnum
 {

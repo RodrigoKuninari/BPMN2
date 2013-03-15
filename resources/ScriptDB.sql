@@ -1,3 +1,9 @@
+-- UFMS | FACOM | Sistemas de Apoio à Decisão - 2013
+-- Trabalho - Mapeamento Relacional do BPMN 2.0
+-- Integrantes:
+-- - Heverson Silva Vasconcelos
+-- - Rodrigo Kuninari
+
 -- Database: "BPMN2"
 -- DROP DATABASE "BPMN2";
 CREATE DATABASE "BPMN2"
@@ -22,12 +28,20 @@ WITH (
 );
 ALTER TABLE workflowprocess
   OWNER TO postgres;
-  
+
 -- Table: pool
 -- DROP TABLE pool;
 CREATE TABLE pool
 (
   id bigint NOT NULL,
+  xcoordinate integer NOT NULL,
+  ycoordinate integer NOT NULL,
+  bordercolor integer NOT NULL,
+  bordervisible boolean,
+  fillcolor integer NOT NULL,
+  height integer NOT NULL,
+  toolid character varying(255),
+  width integer NOT NULL,
   boundaryvisible boolean,
   idpool character varying(255),
   name character varying(255),
@@ -42,12 +56,20 @@ WITH (
 );
 ALTER TABLE pool
   OWNER TO postgres;
-  
+
 -- Table: lane
 -- DROP TABLE lane;
 CREATE TABLE lane
 (
   id bigint NOT NULL,
+  xcoordinate integer NOT NULL,
+  ycoordinate integer NOT NULL,
+  bordercolor integer NOT NULL,
+  bordervisible boolean,
+  fillcolor integer NOT NULL,
+  height integer NOT NULL,
+  toolid character varying(255),
+  width integer NOT NULL,
   idlane character varying(255),
   name character varying(255),
   parentpool_id bigint,
@@ -61,12 +83,20 @@ WITH (
 );
 ALTER TABLE lane
   OWNER TO postgres;
-  
+
 -- Table: activity
 -- DROP TABLE activity;
 CREATE TABLE activity
 (
   id bigint NOT NULL,
+  xcoordinate integer NOT NULL,
+  ycoordinate integer NOT NULL,
+  bordercolor integer NOT NULL,
+  bordervisible boolean,
+  fillcolor integer NOT NULL,
+  height integer NOT NULL,
+  toolid character varying(255),
+  width integer NOT NULL,
   idactivity character varying(255),
   name character varying(255),
   type integer,
@@ -81,12 +111,16 @@ WITH (
 );
 ALTER TABLE activity
   OWNER TO postgres;
-  
+
 -- Table: transition
 -- DROP TABLE transition;
 CREATE TABLE transition
 (
   id bigint NOT NULL,
+  xcoordinate integer NOT NULL,
+  ycoordinate integer NOT NULL,
+  bordercolor integer NOT NULL,
+  toolid character varying(255),
   idtransition character varying(255),
   type integer,
   from_id bigint,
